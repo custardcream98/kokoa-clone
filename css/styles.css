@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@200;500&display=swap");
+@import "reset.css"; /*브라우저의 기본 설정 모두 다 리셋하는 css파일임.
+이렇게 다른 css파일을 import하는건 html이 아닌 css단에서 해주는것이 좋음*/
+@import "status-bar.css";
+
+body {
+  font-family: "IBM Plex Sans KR", sans-serif;
+}

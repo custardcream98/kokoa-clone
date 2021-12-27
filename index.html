@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="kr">
   <head>
+    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>This is Kokoa Talk, not Kakao Talk.</title>
   </head>
   <body>
-    <div id="status-bar">
+    <div class="status-bar">
       <div class="status-bar__column">
         <span>서비스 없음</span>
         <!--Todo : 와이파이 아이콘-->
-        <img src="https://www.svgrepo.com/show/779/wifi.svg" />
+        <img src="https://www.svgrepo.com/show/779/wifi.svg" height="17px"
+        width="17px" display: flex />
       </div>
       <div class="status-bar__column">
         <span>18:04</span>
@@ -18,9 +20,19 @@
       <div class="status-bar__column">
         <span>200%</span>
         <!--배터리 아이콘-->
-        <img src="https://www.svgrepo.com/show/4610/battery.svg" />
+        <img
+          id="battery-full"
+          src="https://www.svgrepo.com/show/4610/battery.svg"
+          height="20px"
+          width="20px"
+        />
         <!--번개 아이콘-->
-        <img src="https://www.svgrepo.com/show/113419/lightning.svg" />
+        <img
+          id="lightning"
+          src="https://www.svgrepo.com/show/113419/lightning.svg"
+          height="17px"
+          width="17px"
+        />
       </div>
     </div>
 
