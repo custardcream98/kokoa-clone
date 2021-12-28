@@ -39,13 +39,15 @@
     <header class="welcome-header">
       <h1 class="welcome-header__title">나는 존나 멋진 개발자가 될거야!</h1>
       <p class="welcome-header__text">
-        이미 계정이 있다면 이메일 혹은 전화번호로 로그인해주세요.
+        이미 Kokoa톡 계정이 있다면 이메일 혹은 전화번호로 로그인해주세요.
       </p>
     </header>
 
-    <form id="login-form">
-      <input type="text" placeholder="이메일 혹은 전화번호" />
-      <input type="text" placeholder="비밀번호" required />
+    <form action="friends.html" method="get" id="login-form">
+      <!--get 메소드는 원래 로그인엔 쓰면 안됨. 다음 페이지 가서 url 보면 거기 다 떠버림
+        하지만 backend 서버가 없으니까 일단은 그냥 이렇게 함. 원래는 post를 써야 함-->
+      <input name="username" type="text" placeholder="이메일 혹은 전화번호" />
+      <input name="password" type="text" placeholder="비밀번호" required />
       <input type="submit" value="로그인 하기" />
       <a href="#">비밀번호 찾기</a>
     </form>

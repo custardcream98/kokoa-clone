@@ -1,0 +1,74 @@
+.welcome-header {
+  margin: 135px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+}
+.welcome-header__title {
+  margin-bottom: 52px;
+  font-size: 36px;
+}
+.welcome-header__text {
+  width: 40%;
+  opacity: 0.7;
+  font-weight: 300;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 0px 100px;
+}
+#login-form input {
+  padding: 39px 0px;
+  border: none;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* 
+  아래에 나오는 것들은 각각
+  .login-form__input {
+  }
+  
+  .login-form__btn {
+  }
+  
+  .login-form__a {
+  }
+  
+  로 명명을 대체할 수 있고, 프로들은 이렇게 한다.
+  이 경우, 각 태그에 클래스를 생성해줘야 한다.
+  */
+
+#login-form input:not([type="submit"]) {
+  /* 이렇게 특정 태그만 빼는게 가능 */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+#login-form input:focus {
+  border-color: var(--yellow);
+  /* input type submit에도 border color가 들어가긴 하지만
+    border bottom이 없으므로 이렇게 해도 상관이 없어짐. */
+}
+#login-form input[type="submit"] {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 30px 0px;
+}
+#login-form input[type="submit"]:hover {
+  background-color: var(--yellow);
+  cursor: pointer;
+}
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 17px;
+}
